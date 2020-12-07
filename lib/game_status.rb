@@ -24,3 +24,14 @@ end
 def full?(board)
   board.all?{|full| full == "X" || full == "O"}
 end
+
+def draw?(board)
+  if full?(board) == true && won?(board) == false
+    return true
+  elsif full?(board) == false && won?(board) == false
+    return false
+  elsif won?(board) == true
+    return false
+  else
+  end
+end
