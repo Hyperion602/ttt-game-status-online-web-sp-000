@@ -13,3 +13,6 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 # Define your WIN_COMBINATIONS constant
+def won?(board)
+  WIN_COMBINATIONS.any?{|win| win == board}
+    
