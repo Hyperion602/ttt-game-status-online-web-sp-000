@@ -14,5 +14,5 @@ WIN_COMBINATIONS = [
 ]
 # Define your WIN_COMBINATIONS constant
 def won?(board)
-  WIN_COMBINATIONS.select{|win| win == board}
+  WIN_COMBINATIONS.detect{|win| win == board}
 end
