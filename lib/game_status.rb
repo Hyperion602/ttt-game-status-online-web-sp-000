@@ -43,3 +43,10 @@ def over?(board)
     return false
   end
 end
+
+def winner?(board)
+  won == ""
+  if winner == won?
+    won = board[winner.first]
+  end
+end
