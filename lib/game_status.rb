@@ -14,10 +14,4 @@ WIN_COMBINATIONS = [
 ]
 # Define your WIN_COMBINATIONS constant
 def won?(board)
-  WIN_COMBINATIONS.each do
-    if WIN_COMBINATIONS.any?{|win| win == board}
-      return win
-    else
-    end
-  end
-end
+  WIN_COMBINATIONS.any?{|win| win == board}
