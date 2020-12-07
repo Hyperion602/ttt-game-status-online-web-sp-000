@@ -15,3 +15,4 @@ WIN_COMBINATIONS = [
 # Define your WIN_COMBINATIONS constant
 def won?(board)
   WIN_COMBINATIONS.any?{|win| win == board}
+end
