@@ -39,14 +39,12 @@ end
 def over?(board)
   if won?(board) == true || full?(board) == true || draw?(board) == true
     return true
+  elsif won?(board) == true && full?(board) == false
+    return true
   else
     return false
   end
 end
 
 def winner?(board)
-  won == ""
-  if winner == won?
-    won = board[winner.first]
-  end
 end
