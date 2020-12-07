@@ -23,3 +23,4 @@ end
 
 def full?(board)
   board.all?{|full| full == "X" || full == "O"}
+end
