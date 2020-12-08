@@ -37,18 +37,15 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board) != false || full?(board) == true || draw?(board) == true
+  if draw?(board) || won?(board) || full?(board)
     return true
-  elsif won?(board) != false && full?(board) == false
-    return true
-  elsif won?(board) == false && full?(board) == false && draw?(board) == false
-    return false
   else
+    return false
   end
 end
 
 def winner(board)
   if won?(board) != false
-    board.detect{|i| i == "X" && i == "O"}
+    board.detect
   end
 end
