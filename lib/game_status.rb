@@ -48,6 +48,6 @@ end
 
 def winner(board)
   if won?(board) != false
-    board[won?(board)]
+    board.select{|winning| winning == won?board)}
   end
 end
