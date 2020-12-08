@@ -48,6 +48,7 @@ end
 
 def winner(board)
   if won?(board) != false
-    board.select{|winning| winning == won?board)}
+    board.detect do
+      won?(board)
   end
 end
