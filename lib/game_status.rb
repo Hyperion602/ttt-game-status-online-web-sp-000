@@ -50,6 +50,5 @@ end
 def winner(board)
   if won?(board) != false
     board.detect{|i| i == "X" && i == "O"}
-    end
   end
 end
