@@ -48,7 +48,7 @@ end
 
 def winner?(board)
     if won?(board) != false
-      won?(board).select{|winning| winning[0] == "X", winning[1] == "X", winning[2] == "X"}
+      won?(board).select{|winning| winning[0] == "X" && winning[1] == "X" && winning[2] == "X"}
     else
       return "O"
     end
